@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Timer</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+   </head>
+   <body>
+      <div class="wrapper bg-black h-screen text-white flex justify-center">
+         <div class="container-main mt-[60px]">
+            <h1 class="text-[100px] text-center">Timer</h1>
+            <div class="mb-5"><input class="text-[100px] w-[136px] text-center border-[0px]" type="text" id="hour" min="0"
+               max="60" placeholder="0" />
+               <span class="hidden text-[100px] w-[136px] text-center border-[0px]" id="h">0</span> <span
+                  class="text-[100px] text-white">:</span>
+               <input class=" text-[100px] w-[136px] text-center border-[0px]" type="text" id="min" min="0" max="60"
+                  placeholder="0" />
+               <span class="hidden text-[100px] w-[136px] text-center border-[0px]" id="m">0</span> <span
+                  class="text-[100px] text-white">:</span>
+               <input class=" text-[100px] w-[136px] text-center border-[0px]" type="text" id="sec" min="0" max="60"
+                  placeholder="0" />
+               <span class="hidden text-[100px] w-[136px] text-center border-[0px]" id="s">0</span>
+            </div>
+            <div class="btn_section flex justify-center items-center gap-5 mb-5">
+               <button
+                  class="bg-white text-black text-xl px-3 py-2 cursor-pointer rounded-sm font-bold hover:opacity-75 transition-all"
+                  id="btn">START</button>
+               <button
+                  class="bg-white text-black text-xl px-3 py-2 cursor-pointer rounded-sm font-bold hover:opacity-75 transition-all"
+                  id="stop_btn">STOP</button>
+               <button
+                  class="bg-white text-black text-xl px-3 py-2 cursor-pointer rounded-sm font-bold hover:opacity-75 transition-all"
+                  id="reset_btn">RESET</button>
+            </div>
+            <div class="flex justify-center gap-5">
+               <div id="teethBrush_timer"
+                  class="already_timer w-[160px] cursor-pointer p-4 md:p-5 border shadow-sm rounded-xl text-center">
+                  <img class="my-0 mx-auto" src="icons8-brushing-teeth-48.png" alt="teeth">
+                  <h3 class="text-lg font-bold text-gray-800 dark:text-white">Brush Teeth</h3>
+                  <div class="flex justify-center items-center gap-2">
+                     <span id="ho" class="text-lg font-bold text-gray-800 dark:text-white ">0</span> <span
+                        class="text-lg font-bold text-gray-800 dark:text-white ">:</span> <span id="mi"
+                        class="text-lg font-bold text-gray-800 dark:text-white">2</span> <span
+                        class="text-lg font-bold text-gray-800 dark:text-white ">:</span><span id="se"
+                        class="text-lg font-bold text-gray-800 dark:text-white">0</span>
+                  </div>
+               </div>
+               <div id="maggi_timer" class="already_timer w-[160px] cursor-pointer p-4 md:p-5 border shadow-sm rounded-xl text-center">
+                  <img class="my-0 mx-auto" src="icons8-noodles-48.png" alt="Meggi">
+                  <h3 class="text-lg font-bold text-gray-800 dark:text-white">Meggi</h3>
+                  <div class="flex justify-center items-center gap-2">
+                     <span id="hoMeggi" class="text-lg font-bold text-gray-800 dark:text-white ">0</span>
+                     <span class="text-lg font-bold text-gray-800 dark:text-white "> : </span> <span id="miMeggi"
+                        class="text-lg font-bold text-gray-800 dark:text-white">5</span> <span
+                        class="text-lg font-bold text-gray-800 dark:text-white ">:</span><span id="seMeggi"
+                        class="text-lg font-bold text-gray-800 dark:text-white">0</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>

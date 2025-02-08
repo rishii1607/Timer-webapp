@@ -1,0 +1,22 @@
+
+#btn{
+    display: inline-block;
+}
+/* input{
+    border: none;
+    width: 136px;
+    font-size: 100px;
+    text-align: center;
+} */
+
+/* span{
+    border: none;
+    width: 136px;
+    font-size: 100px;
+    text-align: center;
+
+    display: none;
+} */
+#stop_btn{
+    display: none;
+}
