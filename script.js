@@ -90,7 +90,7 @@ function startTimer() {
     flag2 = false;
   }
 
-  // if (hourValue <= 60 && minValue <= 60 && secValue <= 60) {
+  
   console.log(hourValue, minValue, secValue);
 
   timer = setInterval(function () {
@@ -122,9 +122,7 @@ function startTimer() {
 
     stop_btn.style.display = "inline-block";
   }, 1000);
-  // } else {
-  //   console.log("Please Enter Correct Time");
-  // }
+  
 }
 
 btn.addEventListener("click", startTimer);
